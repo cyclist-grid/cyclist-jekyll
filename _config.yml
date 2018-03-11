@@ -1,0 +1,15 @@
+title: Bicycle
+author: robenkleene
+email: contact@robenkleene.com
+description: >
+  Demo site for the Bicycle Jekyll theme.
+
+twitter_username: robenkleene
+github_username:  robenkleene
+rss: rss
+
+markdown: kramdown
+theme: bicycle
+exclude:
+  - Gemfile
+  - Gemfile.lock
