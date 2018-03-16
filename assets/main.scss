@@ -5,7 +5,7 @@
 $font-size: 12px;
 $line-height: 17px;
 
-@import "raster";
+@import "../vendor/raster/dist/raster.scss";
 
 #container {
   margin: 0 auto;
