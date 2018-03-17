@@ -12,3 +12,7 @@ div#grid {
   padding: ($leading-height * 3) 0;
   width: columns-width(4);
 }
+
+header[role=banner] {
+  text-align: center;
+}
