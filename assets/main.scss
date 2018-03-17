@@ -7,7 +7,7 @@ $line-height: 17px;
 
 @import "../vendor/raster/dist/raster.scss";
 
-main {
+div#grid {
   margin: 0 auto;
   padding: ($leading-height * 3) 0;
   width: columns-width(4);
