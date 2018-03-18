@@ -10,7 +10,7 @@ layout: default
 {{ content }}
 
         {%- if site.posts.size > 0 %}
-        <section>
+        <section id="posts">
 
           {%- assign date_format = site.bicycle.date_format | default: "%b %-d, %Y" -%}
           {%- for post in site.posts %}
