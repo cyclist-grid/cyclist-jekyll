@@ -7,6 +7,10 @@ $line-height: 17px;
 
 @import "../vendor/raster/dist/raster.scss";
 
+figure {
+  margin: 0 0 $leading-height 0;
+}
+
 div#grid {
   margin: 0 auto;
   padding: ($leading-height * 3) 0;
@@ -43,3 +47,21 @@ header[role=banner] nav ul li a {
   display: block;
 }
 
+section#posts article {
+  margin-bottom: $leading-height * 2;
+}
+
+section#post header h1 {
+  margin-bottom: 0;
+}
+section#post header {
+  margin-bottom: $leading-height;
+}
+
+h2.post-date {
+  @include header($pica);
+}
+
+blockquote {
+  margin-left: $indent-width;
+}

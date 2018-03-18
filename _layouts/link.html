@@ -2,19 +2,20 @@
 layout: default
 ---
 
-        <article class="link">
-          <header>
-            <h1>{{ page.title | escape }}</h1>
-            <time>
-              {%- assign date_format = site.bicycle.date_format | default: "%b %-d, %Y" -%}
-              {{- page.date | date: date_format -}}
-            </time>
-            {%- if page.author -%}
-            <span>{{ page.author }}</span>
-            {%- endif %}
-          </header>
+        <section id="post">
+          <article class="link">
+            <header>
+              <h1>{{ page.title | escape }}</h1>
+              <time>
+                {%- assign date_format = site.bicycle.date_format | default: "%b %-d, %Y" -%}
+                {{- page.date | date: date_format -}}
+              </time>
+              {%- if page.author -%}
+              <span>{{ page.author }}</span>
+              {%- endif %}
+            </header>
 
-{{ content }}
+  {{ content }}
 
-        </article>
-
+          </article>
+        </section>
