@@ -3,20 +3,29 @@ layout: default
 ---
 
         {%- if page.title %}
-        <header>
+        <header role="title">
           <h1>{{ page.title }}</h1>
         </header>
         {%- endif -%}
         {{ content }}
+
         {%- if site.posts.size > 0 %}
-        <ul>
-        {%- for post in site.posts %}
-          <li>
-            {%- assign date_format = site.bicycle.date_format | default: "%b %-d, %Y" -%}
-            <span>{{ post.date | date: date_format }}</span>
-            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <section>
+
+          {%- assign date_format = site.bicycle.date_format | default: "%b %-d, %Y" -%}
+          {%- for post in site.posts %}
+          {%- if current_date != post.date %}
+          <h2 role="date"><span>{{ post.date | date: date_format }}</span></h2>
+          {% endif -%}
+          {%- assign current_date = post.date -%}
+
+          <article>
+            <header>
+              <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+            </header>
             {{ post.excerpt }}
-          </li>
-        {%- endfor %}
-        </ul>
+          </article>
+          {%- endfor %}
+
+        </section>
         {% endif -%}
