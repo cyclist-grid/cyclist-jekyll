@@ -17,6 +17,17 @@ div#grid {
   width: columns-width(4);
 }
 
+@media screen and (max-width: columns-width(4)) {
+  body {
+    padding-left: $gutter-width;
+    padding-right: $gutter-width;
+  }
+
+  div#grid {
+    width: 100%;
+  }
+}
+
 header[role=banner] {
   text-align: center;
   margin-bottom: $leading-height;
@@ -54,6 +65,7 @@ section#posts article {
 section#post header h1 {
   margin-bottom: 0;
 }
+
 section#post header {
   margin-bottom: $leading-height;
 }
