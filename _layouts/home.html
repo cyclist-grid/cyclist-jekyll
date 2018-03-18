@@ -19,7 +19,7 @@ layout: default
           {% endif %}
           {%- assign current_date = post.date %}
 
-          <article>
+          <article class="{{ post.layout | default: "Post" }}">
             <header>
               <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
             </header>
