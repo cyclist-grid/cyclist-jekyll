@@ -2,4 +2,14 @@
 layout: default
 ---
 
-{{ content }}
+        <section id="page">
+          <article class="page">
+            <header>
+              <h1>{{ page.title | escape }}</h1>
+            </header>
+
+  {{ content }}
+
+          </article>
+        </section>
+
