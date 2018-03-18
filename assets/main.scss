@@ -15,4 +15,31 @@ div#grid {
 
 header[role=banner] {
   text-align: center;
+  margin-bottom: $leading-height;
 }
+
+header[role=banner] h1 a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+header[role=banner] nav {
+  width: 100%;
+}
+
+header[role=banner] nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+header[role=banner] nav ul li {
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+header[role=banner] nav ul li a {
+  display: block;
+}
+
