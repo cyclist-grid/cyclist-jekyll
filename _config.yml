@@ -8,6 +8,9 @@ twitter_username: robenkleene
 github_username:  robenkleene
 rss: rss
 
+# show_excerpts: true
+show_contents: true
+
 markdown: kramdown
 theme: bicycle
 exclude:
