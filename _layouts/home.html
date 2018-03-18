@@ -14,16 +14,16 @@ layout: default
 
           {%- assign date_format = site.bicycle.date_format | default: "%b %-d, %Y" -%}
           {%- for post in site.posts %}
-          {%- if current_date != post.date %}
+          {% if current_date != post.date %}
           <h2 class="post-date"><span>{{ post.date | date: date_format }}</span></h2>
-          {% endif -%}
-          {%- assign current_date = post.date -%}
+          {% endif %}
+          {%- assign current_date = post.date %}
 
           <article>
             <header>
               <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
             </header>
-            {{ post.excerpt }}
+{{ post.excerpt }}
           </article>
           {%- endfor %}
 
