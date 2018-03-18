@@ -3,7 +3,7 @@ layout: default
 ---
 
         {%- if page.title %}
-        <header role="title">
+        <header id="page-title">
           <h1>{{ page.title }}</h1>
         </header>
         {%- endif -%}
@@ -15,7 +15,7 @@ layout: default
           {%- assign date_format = site.bicycle.date_format | default: "%b %-d, %Y" -%}
           {%- for post in site.posts %}
           {%- if current_date != post.date %}
-          <h2 role="date"><span>{{ post.date | date: date_format }}</span></h2>
+          <h2 class="post-date"><span>{{ post.date | date: date_format }}</span></h2>
           {% endif -%}
           {%- assign current_date = post.date -%}
 
