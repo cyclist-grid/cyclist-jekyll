@@ -52,7 +52,7 @@ header[role=banner] nav ul li a {
 }
 
 section#posts article {
-  margin-bottom: $leading-height * 2;
+  margin-bottom: $leading-height * 3;
 }
 
 section#post header h1 {
@@ -73,4 +73,8 @@ h2.post-date {
 blockquote,
 pre {
   margin-left: $indent-width;
+}
+
+hr {
+  display: none;
 }
