@@ -18,13 +18,13 @@ h2.post-date {
   // font-family: "Open Sans", sans-serif;
   font-weight: Black;
   text-transform: uppercase;
-  font-family: "LatoWeb", sans-serif;
+  font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
 }
 
 header[role=banner] nav a {
   font-weight: bold;
   // text-transform: uppercase;
-  font-family: "LatoWeb", sans-serif;
+  font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
 }
 
 header[role=banner] h1 {
@@ -56,5 +56,5 @@ code {
 blockquote {
   // font-family: "Open Sans", sans-serif;
   font-size: $font-size - 2;
-  font-family: "LatoWeb", sans-serif;
+  font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
 }
