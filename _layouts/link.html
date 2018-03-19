@@ -5,11 +5,11 @@ layout: default
         <section id="post">
           <article class="link">
             <header>
-              <h1>{{ page.title | escape }}</h1>
               <time>
-                {%- assign date_format = site.bicycle.date_format | default: "%b %-d, %Y" -%}
+                {%- assign date_format = site.bicycle.date_format | default: "%A, %b %-d, %Y" -%}
                 {{- page.date | date: date_format -}}
               </time>
+              <h1>{{ page.title | escape }}</h1>
               {%- if page.author -%}
               <span>{{ page.author }}</span>
               {%- endif %}

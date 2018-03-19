@@ -1,3 +1,15 @@
+a {
+  color: #000;
+}
+
+a:visited {
+  color: #888;
+}
+
+a:hover {
+  color: #555;
+}
+
 h1,
 h2,
 h3,
@@ -7,9 +19,32 @@ h6 {
   font-family: "Playfair Display", sans-serif;
 }
 
+article h1 {
+  @include header($double-small-pica);
+}
+
+article h2 {
+  @include header($great-primer);
+}
+
+article h3 {
+  @include header($english);
+}
+
+article.link h1,
+article.link h2,
+article.link h3,
+article h4,
+article h5,
+article h6 {
+  font-size: $font-size + 1;
+  margin-bottom: 0;
+}
+
+article header time,
 h2.post-date {
   font-size: $font-size - 3;
-  font-weight: Black;
+  font-weight: bold;
   text-transform: uppercase;
   font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
 }
@@ -34,14 +69,16 @@ code {
 }
 
 pre code {
-  font-size: $font-size - 4;
+  font-size: $font-size - 2;
 }
 
 code {
-  font-size: $font-size - 4;
+  color: #555;
+  font-size: $font-size - 1;
 }
 
 blockquote {
   font-size: $font-size - 2;
   font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
+  color: #555;
 }

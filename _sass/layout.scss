@@ -63,6 +63,13 @@ section#post header {
   margin-bottom: $leading-height;
 }
 
+article header time,
+h2.post-date {
+  line-height: $line-height;
+  margin-bottom: $leading-height;
+  display: block;
+}
+
 blockquote,
 pre {
   margin-left: $indent-width;
