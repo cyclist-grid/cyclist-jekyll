@@ -8,8 +8,7 @@ h6 {
 }
 
 h2.post-date {
-  @include header($pica);
-
+  font-size: $font-size - 3;
   font-weight: Black;
   text-transform: uppercase;
   font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
