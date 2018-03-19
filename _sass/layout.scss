@@ -6,7 +6,7 @@ $main-width: columns-width(4);
 
 div#grid {
   margin: 0 auto;
-  padding: ($leading-height * 3) 0;
+  padding: ($leading-height * 2) 0;
   width: $main-width;
 }
 
@@ -23,7 +23,7 @@ div#grid {
 
 header[role=banner] {
   text-align: center;
-  margin-bottom: $leading-height;
+  margin-bottom: $leading-height * 2;
 }
 
 header[role=banner] h1 a {
