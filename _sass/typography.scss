@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: "Crimson", Georgia, "Times New Roman", Times, serif;
+  // font-family: "Open Sans", sans-serif;
+  // font-family: "Lato", sans-serif;
+  // font-family: "Arvo", sans-serif;
+  font-family: "Playfair Display", sans-serif;
+  // font-family: "League Spartan", sans-serif;
+  // font-family: "League Gothic-Regular", sans-serif;
+}
+
+h2.post-date {
+  @include header($pica);
+  // font-family: "Open Sans", sans-serif;
+  font-weight: Black;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+
+header[role=banner] nav a {
+  font-weight: bold;
+  // text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+
+header[role=banner] h1 {
+  font-family: "Playfair Display", sans-serif;
+  // font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  // font-family: "Fanwood Text", Georgia, "Times New Roman", Times, serif;
+  // font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
+  font-family: "Crimson", Georgia, "Times New Roman", Times, serif;
+  // font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+pre,
+code {
+  font-family: "Fira Mono", "Menlo", "Courier New", "Courier", monospace;
+}
+
+pre code {
+  font-size: $font-size - 4;
+}
+
+code {
+  font-size: $font-size - 4;
+}
+
+blockquote {
+  // font-family: "Open Sans", sans-serif;
+  font-size: $font-size - 2;
+  font-family: "Lato", sans-serif;
+}
