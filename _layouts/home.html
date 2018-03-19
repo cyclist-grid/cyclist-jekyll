@@ -12,7 +12,7 @@ layout: default
         {%- if site.posts.size > 0 %}
         <section id="posts">
 
-          {%- assign date_format = site.bicycle.date_format | default: "%A, %b %-d, %Y" -%}
+          {%- assign date_format = site.cyclist.date_format | default: "%A, %b %-d, %Y" -%}
           {%- for post in site.posts %}
           {% if current_date != post.date and current_date %}
           <hr>

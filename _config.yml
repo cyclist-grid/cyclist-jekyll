@@ -1,8 +1,8 @@
-title: Bicycle
+title: Cyclist
 author: robenkleene
 email: contact@robenkleene.com
 description: >
-  Demo site for the Bicycle Jekyll theme.
+  Demo site for the Cyclist Jekyll theme.
 
 twitter_username: robenkleene
 github_username:  robenkleene
@@ -12,7 +12,7 @@ rss: rss
 show_contents: true
 
 markdown: kramdown
-theme: bicycle
+theme: cyclist
 exclude:
   - Gemfile
   - Gemfile.lock

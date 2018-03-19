@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "bicycle"
+  spec.name          = "cyclist"
   spec.version       = "0.2.0"
   spec.authors       = ["Roben Kleene"]
   spec.email         = ["contact@robenkleene.com"]
 
   spec.summary       = "Bicycle for the mind."
-  spec.homepage      = "https://github.com/robenkleene/bicycle"
+  spec.homepage      = "https://github.com/robenkleene/cyclist"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }

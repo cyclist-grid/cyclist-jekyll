@@ -6,7 +6,7 @@ layout: default
           <article class="post">
             <header>
               <time>
-                {%- assign date_format = site.bicycle.date_format | default: "%A, %b %-d, %Y" -%}
+                {%- assign date_format = site.cyclist.date_format | default: "%A, %b %-d, %Y" -%}
                 {{- page.date | date: date_format -}}
               </time>
               <h1>{{ page.title | escape }}</h1>
