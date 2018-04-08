@@ -78,3 +78,8 @@ pre {
 hr {
   display: none;
 }
+
+article.page img {
+  max-width: 100%;
+  vertical-align: middle;
+}
