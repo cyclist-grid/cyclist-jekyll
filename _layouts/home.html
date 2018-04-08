@@ -26,12 +26,14 @@ layout: default
             <header>
               <h1><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
             </header>
-            {%- if site.show_excerpts -%}
+
+{% if site.show_excerpts -%}
 {{ post.excerpt }}
-            {%- endif -%}
-            {%- if site.show_contents -%}
+{%- endif -%}
+{%- if site.show_contents -%}
 {{ post.content }}
-            {%- endif -%}
+{%- endif -%}
+
           </article>
           {%- endfor %}
 
