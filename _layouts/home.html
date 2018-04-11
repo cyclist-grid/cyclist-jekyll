@@ -18,7 +18,7 @@ layout: default
           <hr>
           {% endif %}
           {% if current_date != post.date %}
-          <h2 class="post-date"><time>{{ post.date | date: date_format }}</time></h2>
+          <h2 class="post-date"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: date_format }}</time></h2>
           {% endif %}
           {%- assign current_date = post.date %}
 
