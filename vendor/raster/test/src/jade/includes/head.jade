@@ -1,0 +1,11 @@
+head
+  meta(charset="utf-8")
+  - var nodeModulesPath = '../../../node_modules/'
+  script(src=nodeModulesPath + 'mocha/mocha.js')
+  script(src=nodeModulesPath + 'chai/chai.js')
+  script.
+    mocha.ui('bdd');
+    mocha.reporter('html');
+    var should = chai.should();
+  script(src='../../lib/js/test-helper.js')
+  link(rel='stylesheet', href=nodeModulesPath + 'mocha/mocha.css')

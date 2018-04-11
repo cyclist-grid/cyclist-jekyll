@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+  title= "Default"
+  include ./includes/head
+  script(src='../../lib/tests/test-default.js')
+  script(src='../../../dist/raster.js')
+  link(rel='stylesheet', href='../css/test-default.css')
+body.raster-show-baseline
+  include ./includes/content
+  include ./includes/mocha

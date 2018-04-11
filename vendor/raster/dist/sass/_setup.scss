@@ -1,0 +1,25 @@
+// Line Height & Leading Variables
+
+$font-size: false !default;
+$line-height: 1.25rem !default;
+$leading-height: $line-height !default;
+
+@if unit($line-height) == "%" {
+	$leading-height: $line-height / 100% * 1rem;
+} @else if unit($line-height) == "em" {
+	$leading-height: $line-height / 1em * 1rem;
+}
+
+// Grid Variables
+
+$gutter-width: 1rem !default;
+$num-indent-gutters: 2 !default;
+$num-unit-gutters: 4 !default;
+$num-column-units: 2 !default;
+
+// Calculation Variables
+
+$indent-width: $gutter-width * $num-indent-gutters !default;
+$unit-width: $gutter-width * $num-unit-gutters !default;
+$column-width: $unit-width * $num-column-units + $gutter-width * ($num-column-units - 1) !default;
+

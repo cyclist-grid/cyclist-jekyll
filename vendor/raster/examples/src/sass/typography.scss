@@ -1,0 +1,10 @@
+$font-size: 12px;
+$line-height: 17px;
+
+@import '../../../dist/raster';
+
+#container {
+  margin: 0 auto;
+  padding: ($leading-height * 3) 0;
+  width: columns-width(4);
+}

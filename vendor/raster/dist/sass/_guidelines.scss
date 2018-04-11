@@ -1,0 +1,33 @@
+.raster-guidelines {
+  display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.raster-guidelines > div.raster-column {
+  display: -webkit-flex;
+  display: flex;
+  background-color: rgba(148, 235, 255, .25);
+  margin-right: $gutter-width;
+  -webkit-flex: 0 0 $column-width;
+  flex: 0 0 $column-width;
+}
+
+.raster-guidelines > div.raster-column:last-child {
+  margin-right: 0;
+}
+
+.raster-column > div.raster-unit {
+  background-color: rgba(148, 235, 255, .25);
+  margin-right: $gutter-width;
+  -webkit-flex: 0 0 $unit-width;
+  flex: 0 0 $unit-width;
+}
+
+.raster-column > div.raster-unit:last-child {
+  margin-right: 0;
+}

@@ -1,3 +1,0 @@
-[submodule "vendor/raster"]
-	path = vendor/raster
-	url = git@github.com:robenkleene/raster.git

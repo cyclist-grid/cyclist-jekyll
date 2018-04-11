@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+  title= "percent"
+  include ./includes/head
+  script(src='../../lib/tests/test-custom.js')
+  script(src='../../../dist/raster.js')
+  link(rel='stylesheet', href='../css/test-percent.css')
+body.raster-show-baseline
+  include ./includes/content
+  include ./includes/mocha
