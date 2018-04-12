@@ -76,8 +76,12 @@ pre {
   margin-left: $indent-width;
 }
 
-hr {
+section hr {
   display: none;
+}
+
+article hr {
+  display: block;
 }
 
 article img {
