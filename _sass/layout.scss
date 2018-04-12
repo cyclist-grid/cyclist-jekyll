@@ -76,6 +76,14 @@ pre {
   margin-left: $indent-width;
 }
 
+hr {
+  border-top: 1px double #aaa;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: $leading-height;
+}
+
 section hr {
   display: none;
 }
