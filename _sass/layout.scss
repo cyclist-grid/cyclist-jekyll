@@ -10,7 +10,7 @@ div#grid {
   width: $main-width;
 }
 
-@media screen and (max-width: $main-width) {
+@media screen and (max-width: $main-width + $gutter-width * 2) {
   body {
     padding-left: $gutter-width;
     padding-right: $gutter-width;
