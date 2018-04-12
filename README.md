@@ -13,6 +13,17 @@ The typefaces are [Playfair Display][playfair] for headers, [Crimson][crimson] f
 
 ![Cyclist](cyclist.png)
 
+## Raster
+
+To show the raster grid, import the `raster.js` JavaScript in the [HTML `<head>`](https://github.com/robenkleene/cyclist/blob/5c25202438b99adfb0a447255d816162931adaac/_includes/head.html#L7) element:
+
+	<script src="/vendor/raster/dist/raster.js"></script>
+
+Add the following classes to the [`<body>` and grid `<div>` elements](https://github.com/robenkleene/cyclist/blob/5c25202438b99adfb0a447255d816162931adaac/_layouts/default.html#L4-L5):
+
+	<body class="raster-show-baseline">
+	  <div id="grid" class="raster-show-guidelines">
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
