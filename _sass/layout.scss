@@ -84,6 +84,11 @@ hr {
   margin-bottom: $leading-height;
 }
 
+sup {
+  vertical-align: super;
+  line-height: 0;
+}
+
 section hr {
   display: none;
 }
