@@ -64,6 +64,12 @@ section#post header {
   margin-bottom: $leading-height;
 }
 
+section#archive > ul {
+  margin-left: 0;
+  list-style: outside none none;
+  margin-bottom: $leading-height * 3;
+}
+
 article header time,
 h2.post-date {
   line-height: $line-height;
