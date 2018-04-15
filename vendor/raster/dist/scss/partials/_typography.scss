@@ -1,0 +1,109 @@
+@if $font-size {
+  html {
+    font-size: $font-size;
+  }
+}
+
+body {
+  line-height: $line-height;
+}
+
+@function font-size-from-ratio($ratio) {
+  $numerator: nth($ratio, 1);
+  $denumerator: nth($ratio, 2);
+  @return calc(1em * (#{$numerator} / #{$denumerator}));
+}
+
+@mixin header($ratio) {
+  $numerator: nth($ratio, 1);
+  $denumerator: nth($ratio, 2);
+  font-size: font-size-from-ratio($ratio);
+  $leading-multiplier: ceil($numerator / $denumerator);
+  line-height: calc(#{$leading-multiplier} * #{$leading-height});
+  margin-bottom: $leading-height;
+}
+
+$double-great-primer-ratio: 36, 12;
+$double-pica-ratio: 24, 12;
+$double-small-pica-ratio: 21, 12;
+$great-primer-ratio: 18, 12;
+$english-ratio: 14, 12;
+$pica-ratio: 12, 12;
+$small-pica-ratio: 11, 12;
+$long-primer-ratio: 10, 12;
+$bourgeois-ratio: 9, 12;
+$brevier-ratio: 8, 12;
+$minion-ratio: 7, 12;
+$nonpareil-ratio: 6, 12;
+
+$double-great-primer: font-size-from-ratio($double-great-primer-ratio);
+$double-pica: font-size-from-ratio($double-pica-ratio);
+$double-small-pica: font-size-from-ratio($double-small-pica-ratio);
+$great-primer: font-size-from-ratio($great-primer-ratio);
+$english: font-size-from-ratio($english-ratio);
+$pica: font-size-from-ratio($pica-ratio);
+$small-pica: font-size-from-ratio($small-pica-ratio);
+$long-primer: font-size-from-ratio($long-primer-ratio);
+$bourgeois: font-size-from-ratio($bourgeois-ratio);
+$brevier: font-size-from-ratio($brevier-ratio);
+$minion: font-size-from-ratio($minion-ratio);
+$nonpareil: font-size-from-ratio($nonpareil-ratio);
+
+h1 {
+  @include header($double-great-primer-ratio);
+}
+
+h2 {
+  @include header($double-pica-ratio);
+}
+
+h3 {
+  @include header($double-small-pica-ratio);
+}
+
+h4 {
+  @include header($great-primer-ratio);
+}
+
+h5 {
+  @include header($english-ratio);
+}
+
+h6 {
+  @include header($pica-ratio);
+}
+
+p,
+ul,
+ol {
+  margin-bottom: $leading-height;
+}
+
+ul ol,
+ol ol,
+ul ul,
+ol ul {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: $indent-width;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: $indent-width;
+}
+
+sub {
+  line-height: 0;
+  vertical-align: sub;
+  font-size: $long-primer;
+}
+
+sup {
+  line-height: 0;
+  vertical-align: super;
+  font-size: $long-primer;
+}
