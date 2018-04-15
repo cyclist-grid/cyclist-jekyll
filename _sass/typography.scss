@@ -20,15 +20,15 @@ h6 {
 }
 
 article h1 {
-  @include header($double-small-pica);
+  @include header($double-small-pica-ratio);
 }
 
 article h2 {
-  @include header($great-primer);
+  @include header($great-primer-ratio);
 }
 
 article h3 {
-  @include header($english);
+  @include header($english-ratio);
 }
 
 article.link h1,
