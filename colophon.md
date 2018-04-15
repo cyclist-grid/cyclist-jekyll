@@ -13,7 +13,7 @@ The typefaces are [Playfair Display][playfair] for headers, [Crimson][crimson] f
 [crimson]: https://github.com/skosch/Crimson "Crimson"
 [fira]: https://github.com/mozilla/Fira "Fira"
 
-![Cyclist Grid](../cyclist-grid.png)
+![Cyclist Grid](/cyclist-grid.png)
 
-![Cyclist](../cyclist.png)
+![Cyclist](/cyclist.png)
 
