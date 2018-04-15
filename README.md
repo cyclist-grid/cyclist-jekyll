@@ -15,7 +15,7 @@ The typefaces are [Playfair Display][playfair] for headers, [Crimson][crimson] f
 
 ## Raster
 
-To show the raster grid, import the `raster.js` JavaScript in the [HTML `<head>`](_includes/head.html#L7) element:
+To show the raster grid, import the `raster.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
 
 	<script src="/vendor/raster/dist/js/raster.js"></script>
 
