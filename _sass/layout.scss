@@ -70,6 +70,10 @@ section#archive > ul {
   margin-bottom: $leading-height * 3;
 }
 
+section#archive > ul h1 {
+  margin-bottom: 0;
+}
+
 article header time,
 h2.post-date {
   line-height: $line-height;
