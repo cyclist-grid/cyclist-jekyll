@@ -15,11 +15,11 @@ The typefaces are [Playfair Display][playfair] for headers, [Crimson][crimson] f
 
 ## Raster
 
-To show the raster grid, import the `raster.js` JavaScript in the [HTML `<head>`](https://github.com/robenkleene/cyclist/blob/5c25202438b99adfb0a447255d816162931adaac/_includes/head.html#L7) element:
+To show the raster grid, import the `raster.js` JavaScript in the [HTML `<head>`](_includes/head.html#L7) element:
 
-	<script src="/vendor/raster/dist/raster.js"></script>
+	<script src="/vendor/raster/dist/js/raster.js"></script>
 
-Add the following classes to the [`<body>` and grid `<div>` elements](https://github.com/robenkleene/cyclist/blob/5c25202438b99adfb0a447255d816162931adaac/_layouts/default.html#L4-L5):
+Add the following classes to the [`<body>` and grid `<div>` elements](_layouts/default.html):
 
 	<body class="raster-show-baseline">
 	  <div id="grid" class="raster-show-guidelines">
