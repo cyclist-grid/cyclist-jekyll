@@ -81,7 +81,7 @@ hr {
   border-bottom: none;
   border-left: none;
   border-right: none;
-  margin-bottom: $leading-height;
+  margin-bottom: $leading-height - 1;
 }
 
 sup {
