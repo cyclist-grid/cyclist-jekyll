@@ -5,6 +5,12 @@ pre {
 
 $main-width: columns-width(4);
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 div#grid {
   margin: 0 auto;
   padding: ($leading-height * 2) 0;
