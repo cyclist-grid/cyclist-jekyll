@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/robenkleene/cyclist"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|vendor|_layouts|_includes|_sass|LICENSE|README)!i) }
 
   base_path = File.expand_path(File.dirname(__FILE__)) + "/"
   `git submodule --quiet foreach pwd`.split($\).each do |submodule_path|
