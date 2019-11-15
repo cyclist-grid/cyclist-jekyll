@@ -37,9 +37,9 @@ h3 {
 article h4,
 article h5,
 article h6 {
-  line-height: $leading-height * 2;
+  line-height: $leading-height;
   font-size: $font-size + 2;
-  margin-bottom: 0;
+  margin-bottom: $leading-height;
 }
 
 article header time,
