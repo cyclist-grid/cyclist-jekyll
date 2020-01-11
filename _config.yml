@@ -10,7 +10,7 @@ rss: rss
 
 # show_excerpts: true
 show_contents: true
-posts_limit: 5
+posts_limit: 15
 
 markdown: kramdown
 theme: cyclist

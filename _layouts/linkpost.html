@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+        <section id="post">
+          <article class="post">
+            <header>
+              <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+                {%- assign date_format = site.cyclist.date_format | default: "%A, %b %-d, %Y" -%}
+                {{- page.date | date: date_format -}}
+              </time>
+              <h1>{{ page.title | escape }}</h1>
+              {%- if page.author -%}
+              <span>{{ page.author }}</span>
+              {%- endif %}
+            </header>
+
+{{ content }}
+
+          </article>
+        </section>
+
