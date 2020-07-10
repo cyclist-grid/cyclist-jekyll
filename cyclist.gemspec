@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "cyclist"
-  spec.version       = "0.7.7"
+  spec.version       = "0.8.0"
   spec.authors       = ["Roben Kleene"]
   spec.email         = ["contact@robenkleene.com"]
 
@@ -22,8 +22,7 @@ Gem::Specification.new do |spec|
     end
   end
 
-  spec.add_runtime_dependency "jekyll", "~> 3.7"
+  spec.add_runtime_dependency "jekyll", ">= 3.5", "< 5.0"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
-  spec.add_development_dependency "bundler", "~> 1.16"
 end
