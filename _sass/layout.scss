@@ -110,6 +110,10 @@ article hr {
 }
 
 article img {
-  max-width: 100%;
   vertical-align: middle;
+}
+
+article img,
+article video {
+  max-width: 100%;
 }
