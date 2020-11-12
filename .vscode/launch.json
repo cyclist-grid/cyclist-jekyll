@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "jekyll serve",
+      "type":"node",
+      "request": "launch",
+      "runtimeExecutable": "bundle",
+      "runtimeArgs": ["exec", "jekyll", "serve", "--watch", "--drafts"],
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "https?://localhost:([0-9]+)",
+        "uriFormat": "http://localhost:%s"
+      }
+    }
+  ]
+}
