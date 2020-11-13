@@ -9,7 +9,7 @@
       "runtimeArgs": ["exec", "jekyll", "serve", "--watch", "--drafts"],
       "console": "integratedTerminal",
       "serverReadyAction": {
-        "pattern": "https?://localhost:([0-9]+)",
+        "pattern": "https?://127.0.0.1:([0-9]+)",
         "uriFormat": "http://localhost:%s"
       }
     }
