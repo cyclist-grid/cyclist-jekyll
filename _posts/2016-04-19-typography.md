@@ -14,13 +14,16 @@ velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
 occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 mollit anim id est laborum.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor ~sub\ text~ ut labore et ^sup\ text^ magna aliqua. Ut enim ad
+Lorem ipsum dolor sit amet, consectetur **adipisicing elit**, sed do eiusmod
+tempor ut labore et *magna aliqua*. Ut enim ad[^testfootnote]
 minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
 sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 mollit anim id est laborum.
+
+<p>Testing <sub>subscript text</sub></p> 
+<p>Testing <sup>superscript text</sup></p>
 
 ### Blockquote
 
@@ -61,19 +64,19 @@ commodo consequat.
 Headers
 -------
 
-H1: Lorem ipsum dolor sit amet
+H1: Lorem ipsum *dolor sit amet*
 ==============================
 
-H2: Lorem ipsum dolor sit amet, consectetur elit
+H2: *With Italics*
 ------------------------------------------------
 
-### H3: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+### H3: Lorem ipsum dolor sit amet, *consectetur adipisicing elit*
 
-#### H4: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipis
+#### H4: Lorem ipsum dolor sit amet, *consectetur adipisicing elit adipis*
 
-##### H5: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit
+##### H5: Lorem ipsum dolor sit amet, consectetur *adipisicing elit adipisicing elit adipisicing elit*
 
-###### H6: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit
+###### H6: Lorem ipsum dolor sit amet, consectetur *adipisicing elit adipisicing elit adipisicing elit*
 
 Heading 1
 =========
@@ -109,3 +112,7 @@ commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
 occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 mollit anim id est laborum.
+
+* * *
+
+[^testfootnote]: It's important to test footnotes as well.
