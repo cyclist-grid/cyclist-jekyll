@@ -52,16 +52,13 @@ h2.post-date {
 
 header[role=banner] h1 {
   @include header($double-great-primer-ratio);
+  font-family: "Playfair Display", sans-serif;
+  text-transform: uppercase;
 }
 
 header[role=banner] nav a {
   font-weight: bold;
   font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
-}
-
-header[role=banner] h1 {
-  font-family: "Playfair Display", sans-serif;
-  text-transform: uppercase;
 }
 
 body {
@@ -79,14 +76,14 @@ code {
   font-family: "Fira Mono", "Menlo", "Courier New", "Courier", monospace;
 }
 
-pre code {
-  font-size: $font-size - 2;
-  display: block;
-}
-
 code {
   color: #555;
   font-size: $font-size - 4;
+}
+
+pre code {
+  font-size: $font-size - 2;
+  display: block;
 }
 
 blockquote {
