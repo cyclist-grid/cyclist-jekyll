@@ -6,7 +6,7 @@
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "bundle",
-      "runtimeArgs": ["exec", "jekyll", "serve", "--watch", "--drafts"],
+      "runtimeArgs": ["exec", "jekyll", "serve", "--watch", "--drafts", "--livereload"],
       "console": "integratedTerminal",
       "serverReadyAction": {
         "pattern": "https?://127.0.0.1:([0-9]+)",
