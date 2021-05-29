@@ -1,6 +1,6 @@
-# Cyclist
+# Cyclist Jekyll
 
-Cyclist is a Jekyll theme. It uses [Raster](https://github.com/robenkleene/raster) to construct a layout using typographic grid.
+Cyclist Jekyll is a Jekyll theme. It uses [Cyclist Grid](https://github.com/cyclist-grid/cyclist-grid) to construct a layout using typographic grid.
 
 The typefaces are [Playfair Display][playfair] for headers, [Crimson][crimson] for body copy, [Lato][lato] for block quotes, and [Fira Mono][fira] for code. All of them are free software under the [SIL Open Font License](https://en.wikipedia.org/wiki/SIL_Open_Font_License). Thank you for everyone's hard work on free typography.
 
