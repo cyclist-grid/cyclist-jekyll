@@ -13,7 +13,7 @@ The typefaces are [Playfair Display][playfair] for headers, [Crimson][crimson] f
 
 ![Cyclist Grid](cyclist-grid.png)
 
-![Cyclist](cyclist.png)
+![Cyclist](cyclist-nogrid.png)
 
 ## Raster
 
