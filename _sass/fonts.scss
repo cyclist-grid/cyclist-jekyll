@@ -1,0 +1,34 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", sans-serif;
+}
+
+article header time,
+h2.post-date {
+  font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
+}
+
+header[role=banner] h1 {
+  font-family: "Playfair Display", sans-serif;
+}
+
+header[role=banner] nav a {
+  font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
+}
+
+body {
+  font-family: "Crimson", Georgia, "Times New Roman", Times, serif;
+}
+
+pre,
+code {
+  font-family: "Fira Mono", "Menlo", "Courier New", "Courier", monospace;
+}
+
+blockquote {
+  font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
+}

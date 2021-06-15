@@ -10,15 +10,6 @@ a:hover {
   color: #555;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", sans-serif;
-}
-
 h1 {
   @include header($double-small-pica-ratio);
 }
@@ -47,33 +38,21 @@ h2.post-date {
   font-size: $font-size - 3;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
 }
 
 header[role=banner] h1 {
   @include header($double-great-primer-ratio);
-  font-family: "Playfair Display", sans-serif;
   text-transform: uppercase;
 }
 
 header[role=banner] nav a {
   font-weight: bold;
-  font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
-}
-
-body {
-  font-family: "Crimson", Georgia, "Times New Roman", Times, serif;
 }
 
 sub,
 sup {
   margin-left: 1px;
   font-size: $brevier;
-}
-
-pre,
-code {
-  font-family: "Fira Mono", "Menlo", "Courier New", "Courier", monospace;
 }
 
 code {
@@ -88,6 +67,5 @@ pre code {
 
 blockquote {
   font-size: $font-size - 1;
-  font-family: "LatoWeb", Helvetica, Verdana, sans-serif;
   color: #555;
 }
