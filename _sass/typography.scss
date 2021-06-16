@@ -33,8 +33,7 @@ article h6 {
   margin-bottom: $leading-height;
 }
 
-article header time,
-h2.post-date {
+.post-date {
   font-size: $font-size - 3;
   font-weight: bold;
   text-transform: uppercase;
