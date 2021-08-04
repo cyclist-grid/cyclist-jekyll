@@ -15,9 +15,9 @@ The typefaces are [Playfair Display][playfair] for headers, [Crimson][crimson] f
 
 ![Cyclist](cyclist-nogrid.png)
 
-## Raster
+## Cyclist
 
-To show the cyclist grid, import the `cyclist.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
+To show the Cyclist grid, import the `cyclist.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
 
 	<script src="/vendor/cyclist/dist/js/cyclist.js"></script>
 
