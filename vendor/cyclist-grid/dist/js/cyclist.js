@@ -1,7 +1,7 @@
-var Raster = {
+var Cyclist = {
 	baselineHelper: {
-		SHOW_BASELINE_CLASS_NAME: 'raster-show-baseline',
-		BASELINE_CLASS_NAME: 'raster-baseline',
+		SHOW_BASELINE_CLASS_NAME: 'cyclist-show-baseline',
+		BASELINE_CLASS_NAME: 'cyclist-baseline',
 		setup: function() {
 			var showBaselineElements = document.getElementsByClassName(this.SHOW_BASELINE_CLASS_NAME);
 			for (var i = 0; i < showBaselineElements.length; i++) {
@@ -86,8 +86,8 @@ var Raster = {
 	},
 
 	guidelineHelper: {
-		SHOW_GUIDELINES_CLASS_NAME: 'raster-show-guidelines',
-		GUIDELINES_CLASS_NAME: 'raster-guidelines',
+		SHOW_GUIDELINES_CLASS_NAME: 'cyclist-show-guidelines',
+		GUIDELINES_CLASS_NAME: 'cyclist-guidelines',
 		setup: function() {
 			var showGuidelinesElements = document.getElementsByClassName(this.SHOW_GUIDELINES_CLASS_NAME);
 			for (var j = 0; j < showGuidelinesElements.length; j++) {
@@ -97,11 +97,11 @@ var Raster = {
 			}
 		},
 		showGuidelines: function(container) {
-			this.fillContainerWithClassName(container, 'raster-column');
-			var rasterColumns = container.getElementsByClassName('raster-column');
-			for (var i = 0; i < rasterColumns.length; i++) {
-				var rasterColmun = rasterColumns[i];
-				this.fillContainerWithClassName(rasterColmun, 'raster-unit');
+			this.fillContainerWithClassName(container, 'cyclist-column');
+			var cyclistColumns = container.getElementsByClassName('cyclist-column');
+			for (var i = 0; i < cyclistColumns.length; i++) {
+				var cyclistColmun = cyclistColumns[i];
+				this.fillContainerWithClassName(cyclistColmun, 'cyclist-unit');
 			}
 		},
 		fillContainerWithClassName: function(container, className) {
@@ -161,4 +161,4 @@ var Raster = {
 	}
 };
 
-window.addEventListener('load', function () { Raster.setup(); }, false);
+window.addEventListener('load', function () { Cyclist.setup(); }, false);

@@ -104,7 +104,7 @@ ol {
 hr {
   line-height: 2.5rem; }
 
-.raster-guidelines {
+.cyclist-guidelines {
   display: -webkit-flex;
   display: flex;
   position: absolute;
@@ -113,7 +113,7 @@ hr {
   bottom: 0;
   right: 0; }
 
-.raster-guidelines > div.raster-column {
+.cyclist-guidelines > div.cyclist-column {
   display: -webkit-flex;
   display: flex;
   background-color: rgba(148, 235, 255, 0.25);
@@ -121,14 +121,14 @@ hr {
   -webkit-flex: 0 0 9rem;
   flex: 0 0 9rem; }
 
-.raster-guidelines > div.raster-column:last-child {
+.cyclist-guidelines > div.cyclist-column:last-child {
   margin-right: 0; }
 
-.raster-column > div.raster-unit {
+.cyclist-column > div.cyclist-unit {
   background-color: rgba(148, 235, 255, 0.25);
   margin-right: 1rem;
   -webkit-flex: 0 0 4rem;
   flex: 0 0 4rem; }
 
-.raster-column > div.raster-unit:last-child {
+.cyclist-column > div.cyclist-unit:last-child {
   margin-right: 0; }

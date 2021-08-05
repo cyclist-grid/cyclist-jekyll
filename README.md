@@ -15,16 +15,16 @@ The typefaces are [Playfair Display][playfair] for headers, [Crimson][crimson] f
 
 ![Cyclist](cyclist-nogrid.png)
 
-## Raster
+## Cyclist
 
-To show the raster grid, import the `raster.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
+To show the Cyclist grid, import the `cyclist.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
 
-	<script src="/vendor/raster/dist/js/raster.js"></script>
+	<script src="/vendor/cyclist-grid/dist/js/cyclist.js"></script>
 
 Add the following classes to the [`<body>` and grid `<div>` elements](_layouts/default.html):
 
-	<body class="raster-show-baseline">
-	  <div id="grid" class="raster-show-guidelines">
+	<body class="cyclist-show-baseline">
+	  <div id="grid" class="cyclist-show-guidelines">
 
 ## Installation
 
