@@ -17,9 +17,9 @@ The typefaces are [Playfair Display][playfair] for headers, [Crimson][crimson] f
 
 ## Cyclist
 
-To show the Cyclist grid, import the `cyclist.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
+To show the Cyclist grid, import the `cyclist-grid.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
 
-	<script src="/vendor/cyclist-grid/dist/js/cyclist.js"></script>
+	<script src="/vendor/cyclist-grid/dist/js/cyclist-grid.js"></script>
 
 Add the following classes to the [`<body>` and grid `<div>` elements](_layouts/default.html):
 
