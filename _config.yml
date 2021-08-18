@@ -1,4 +1,4 @@
-title: Cyclist
+title: Cyclist Jekyll
 author: robenkleene
 email: contact@robenkleene.com
 description: >
@@ -13,7 +13,7 @@ show_contents: true
 posts_limit: 15
 
 markdown: kramdown
-theme: cyclist
+theme: cyclist-jekyll
 exclude:
   - Gemfile
   - Gemfile.lock
