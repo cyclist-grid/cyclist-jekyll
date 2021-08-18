@@ -15,6 +15,46 @@ The typefaces are [Playfair Display][playfair] for headers, [Crimson][crimson] f
 
 ![Cyclist](cyclist-nogrid.png)
 
+## Customizing Styles
+
+Add a `assets/main.scss` to your Jekyll directory:
+
+    $font-size: 15px;
+    $line-height: 22px;
+
+    @import "{{ site.theme }}";
+
+    // Your SCSS rules here
+
+### Fonts
+
+1. Copy the file `_sass/fonts.scss` to the same path in your Jekyll directory, and edit the font styles.
+2. Copy the `_includes/head.html` to the same path in your Jekyll directory, and replace the font Google font `link` tag.
+
+### Header Image
+
+Using a custom header image:
+
+    h1 {
+      display: none;
+    }
+
+    @import "typography"
+
+    header[role="banner"] img {
+      display: block;
+    }
+
+    header[role="banner"] h1 a {
+      display: inline-block;
+      line-height: normal;
+    }
+
+    header[role="banner"] h1 {
+      line-height: 0;
+      margin-bottom: $line-height;
+    }
+
 ## Cyclist
 
 To show the Cyclist grid, import the `cyclist-grid.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:

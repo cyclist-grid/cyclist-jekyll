@@ -4,8 +4,4 @@
 
 $font-size: 15px;
 $line-height: 22px;
-
-@import "../vendor/cyclist-grid/dist/scss/cyclist-grid.scss";
-@import "layout";
-@import "typography";
-@import "fonts";
+@import "{{ site.theme }}";
