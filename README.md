@@ -28,7 +28,7 @@ Add a `assets/main.scss` to your Jekyll directory:
 
 ### Fonts
 
-1. Copy the file `_sass/fonts.scss` to the same path in your Jekyll directory, and edit the font styles.
+1. Copy the file `_sass/typography.scss` to the same path in your Jekyll directory, and edit the font styles.
 2. Copy the `_includes/head.html` to the same path in your Jekyll directory, and replace the font Google font `link` tag.
 
 ### Header Image
