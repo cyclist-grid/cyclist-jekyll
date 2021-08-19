@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "cyclist-jekyll"
-  spec.version       = "0.9.0"
+  spec.version       = "0.10.0"
   spec.authors       = ["Roben Kleene"]
   spec.email         = ["contact@robenkleene.com"]
 
   spec.summary       = "Bicycle for the mind."
-  spec.homepage      = "https://github.com/robenkleene/cyclist"
+  spec.homepage      = "https://github.com/cyclist-grid/cyclist-jekyl"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|vendor|_layouts|_includes|_sass|LICENSE|README)!i) }
