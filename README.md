@@ -30,7 +30,7 @@ Add a `assets/main.scss` to your Jekyll directory:
 
 1. Add a `assets/main.scss` to your Jekyll directory, as in [Customizing Styles](#customizing-styles)
 2. Add `@import "typography";` after `@import "{{ site.theme }}";` to the `_assets/main.scss` in your Jekyll directory
-3. Copy the file `_sass/typography.scss` to the same path in your Jekyll directory, and edit the font styles
+3. Copy the file `_sass/typography.scss` to the same path in your Jekyll directory, and edit the font styles. (If you want to remove a style in `typography.scss` to set it to the CSS default, do not delete it, instead, use `unset` like `font-size: unset;`. This is because the original `typography.scss` is still also loaded, and the `_sass/typography.scss` in your Jekyll directory is then applied on top.)
 4. Copy the `_includes/head.html` to the same path in your Jekyll directory, and change the Google font `link` tag to reference the new fonts
 
 ### Header Image
