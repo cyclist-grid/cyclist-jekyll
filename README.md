@@ -35,7 +35,7 @@ Add a `assets/main.scss` to your Jekyll directory with the following contents:
 3. Copy `_sass/typography.scss` from this repository to the same path in your Jekyll directory, and edit the font styles. (If you want to remove a style in `typography.scss` to set it to the CSS default, do not delete it, instead, use `unset` like `font-size: unset;`. This is because the original `typography.scss` is still also loaded, and the `_sass/typography.scss` in your Jekyll directory is then applied on top.)
 4. Copy `_includes/head.html` from this repository to the same path in your Jekyll directory, and change the Google font `link` tag to reference the new fonts
 
-### Adding a Header Image
+### Using a Header Image
 
 1. Copy `_includes/header.html` from this repository to the same path in your Jekyll directory.
 2. In the `header.html` in your Jekyll diectory, replace the contents of the `header role="banner" > H1 > a` with an `img`:
