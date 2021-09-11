@@ -15,9 +15,11 @@ The typefaces are [Playfair Display][playfair] for headers, [Crimson][crimson] f
 
 ![Cyclist](cyclist-nogrid.png)
 
-## Customizing Styles
+## Customization
 
-Add a `assets/main.scss` to your Jekyll directory:
+### Using Custom SCSS
+
+Add a `assets/main.scss` to your Jekyll directory with the following contents:
 
     $font-size: 15px;
     $line-height: 22px;
@@ -26,36 +28,38 @@ Add a `assets/main.scss` to your Jekyll directory:
 
     // Your SCSS rules here
 
-### Fonts
+### Using a Custom Font
 
-1. Add a `assets/main.scss` to your Jekyll directory, as in [Customizing Styles](#customizing-styles)
+1. Add an `assets/main.scss` to your Jekyll directory, as described in [Using Custom SCSS](#using-custom-scss)
 2. Add `@import "typography";` after `@import "{{ site.theme }}";` to the `_assets/main.scss` in your Jekyll directory
-3. Copy the file `_sass/typography.scss` to the same path in your Jekyll directory, and edit the font styles. (If you want to remove a style in `typography.scss` to set it to the CSS default, do not delete it, instead, use `unset` like `font-size: unset;`. This is because the original `typography.scss` is still also loaded, and the `_sass/typography.scss` in your Jekyll directory is then applied on top.)
-4. Copy the `_includes/head.html` to the same path in your Jekyll directory, and change the Google font `link` tag to reference the new fonts
+3. Copy `_sass/typography.scss` from this repository to the same path in your Jekyll directory, and edit the font styles. (If you want to remove a style in `typography.scss` to set it to the CSS default, do not delete it, instead, use `unset` like `font-size: unset;`. This is because the original `typography.scss` is still also loaded, and the `_sass/typography.scss` in your Jekyll directory is then applied on top.)
+4. Copy `_includes/head.html` from this repository to the same path in your Jekyll directory, and change the Google font `link` tag to reference the new fonts
 
-### Header Image
+### Adding a Header Image
 
-Using a custom header image:
+1. Copy `_includes/header.html` from this repository to the same path in your Jekyll directory.
+2. In the `header.html` in your Jekyll diectory, replace the contents of the `header role="banner" > H1 > a` with an `img`:
 
-    h1 {
-      display: none;
-    }
+        <header role="banner">
+          <h1>
+            <a href="{{ "/" | relative_url }}"><img height="176px" src="/assets/repla.svg" alt="Repla"></a>
+          </h1>
 
-    @import "typography"
+3. Add an `assets/main.scss` to your Jekyll directory, as described in [Using Custom SCSS](#using-custom-scss), and add the following styles:
 
-    header[role="banner"] img {
-      display: block;
-    }
+        header[role="banner"] img {
+          display: block;
+        }
 
-    header[role="banner"] h1 a {
-      display: inline-block;
-      line-height: normal;
-    }
+        header[role="banner"] h1 a {
+          display: inline-block;
+          line-height: normal;
+        }
 
-    header[role="banner"] h1 {
-      line-height: 0;
-      margin-bottom: $line-height;
-    }
+        header[role="banner"] h1 {
+          line-height: 0;
+          margin-bottom: $line-height;
+        }
 
 ## Cyclist
 
@@ -75,12 +79,7 @@ Add this line to your Jekyll site's `Gemfile`:
 ```ruby
 gem "cyclist"
 ```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: cyclist
-```
+And add this line to your Jekyll site's `_config.yml`: ```yaml theme: cyclist ```
 
 And then execute:
 
