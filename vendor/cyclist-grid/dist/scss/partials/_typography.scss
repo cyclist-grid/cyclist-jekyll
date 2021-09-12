@@ -20,7 +20,6 @@ body {
   font-size: font-size-from-ratio($ratio);
   $leading-multiplier: ceil($numerator / $denumerator);
   line-height: calc(#{$leading-multiplier} * #{$leading-height});
-  margin-bottom: $leading-height;
 }
 
 $double-great-primer-ratio: 36, 12;
