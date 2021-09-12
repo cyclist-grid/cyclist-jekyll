@@ -33,6 +33,10 @@ header[role=banner] {
   margin-bottom: $leading-height * 2;
 }
 
+header[role=banner] h1 {
+  margin-bottom: $leading-height;
+}
+
 header[role=banner] h1 a {
   text-decoration: inherit;
   color: inherit;
@@ -72,11 +76,7 @@ article h6 {
   margin-bottom: $leading-height;
 }
 
-section#post header h1 {
-  margin-bottom: 0;
-}
-
-section#post header {
+#archive li, article header {
   margin-bottom: $leading-height;
 }
 
