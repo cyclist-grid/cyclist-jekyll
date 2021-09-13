@@ -54,32 +54,26 @@ body {
 
 h1 {
   font-size: calc(1em * (36 / 12));
-  margin-bottom: 1.25rem;
   line-height: calc(3 * 1.25rem); }
 
 h2 {
   font-size: calc(1em * (24 / 12));
-  margin-bottom: 1.25rem;
   line-height: calc(2 * 1.25rem); }
 
 h3 {
   font-size: calc(1em * (21 / 12));
-  margin-bottom: 1.25rem;
   line-height: calc(2 * 1.25rem); }
 
 h4 {
   font-size: calc(1em * (18 / 12));
-  margin-bottom: 1.25rem;
   line-height: calc(2 * 1.25rem); }
 
 h5 {
   font-size: calc(1em * (14 / 12));
-  margin-bottom: 1.25rem;
   line-height: calc(2 * 1.25rem); }
 
 h6 {
   font-size: calc(1em * (12 / 12));
-  margin-bottom: 1.25rem;
   line-height: calc(1 * 1.25rem); }
 
 p,
@@ -101,8 +95,15 @@ ol {
   list-style-type: decimal;
   margin-left: 2rem; }
 
-hr {
-  line-height: 2.5rem; }
+sub {
+  line-height: 0;
+  vertical-align: sub;
+  font-size: calc(1em * (10 / 12)); }
+
+sup {
+  line-height: 0;
+  vertical-align: super;
+  font-size: calc(1em * (10 / 12)); }
 
 .cyclist-guidelines {
   display: -webkit-flex;
@@ -111,7 +112,8 @@ hr {
   left: 0;
   top: 0;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  z-index: -1; }
 
 .cyclist-guidelines > div.cyclist-column {
   display: -webkit-flex;
@@ -132,3 +134,6 @@ hr {
 
 .cyclist-column > div.cyclist-unit:last-child {
   margin-right: 0; }
+
+.cyclist-baseline {
+  z-index: -1; }
