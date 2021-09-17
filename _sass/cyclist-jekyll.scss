@@ -4,4 +4,22 @@
 
 #social svg {
   color: black;
+  width: 16px;
+  height: 16px;
+}
+
+#social ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+#social ul li {
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#social ul li a {
+  display: block;
 }
