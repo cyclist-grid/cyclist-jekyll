@@ -1,12 +1,12 @@
 {%- assign social = site.cyclist_jekyll.social_links -%}
 
       <ul id="social">
-        {% for glb in social.gitlab -%}{% if glb.username and glb.instance %}
+        {%- for glh in social.gitlab -%}{%- if glb.username and glb.instance -%}
         <li><a rel="me" href="https://{{ glb.instance | cgi_escape | escape}}/{{glb.username}}" title="{{ glb.username | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#gitlab' | relative_url }}"></use></svg></a></li>
-        {% endif %}{% endfor %}
-        {% if social.dribbble %}
+        {%- endif %}{%- endfor -%}
+        {%- if social.dribbble -%}
           <li><a rel="me" href="https://dribbble.com/{{ social.dribbble | cgi_escape | escape }}" title="{{ social.dribbble | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#dribbble' | relative_url }}"></use></svg></a></li>
-        {% endif %}
+        {%- endif -%}
         {%- if social.facebook -%}
           <li><a rel="me" href="https://www.facebook.com/{{ social.facebook | cgi_escape | escape }}" title="{{ social.facebook | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#facebook' | relative_url }}"></use></svg></a></li>
         {%- endif -%}
