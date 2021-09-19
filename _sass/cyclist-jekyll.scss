@@ -8,18 +8,18 @@
   height: 16px;
 }
 
-#social ul {
+ul#social {
   display: flex;
   flex-direction: row;
   margin: 0;
 }
 
-#social ul li {
+ul#social li {
   list-style: none;
   flex-grow: 1;
   text-align: center;
 }
 
-#social ul li a {
+ul#social li a {
   display: block;
 }
