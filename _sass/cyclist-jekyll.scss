@@ -6,20 +6,19 @@
   color: black;
   width: 16px;
   height: 16px;
+  margin-right: 4px;
+  vertical-align: -3px;
 }
 
 ul#social {
-  display: flex;
   flex-direction: row;
-  margin: 0;
+  float: right;
 }
 
 ul#social li {
   list-style: none;
-  flex-grow: 1;
-  text-align: center;
 }
 
 ul#social li a {
-  display: block;
+  text-decoration: none;
 }
