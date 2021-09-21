@@ -11,14 +11,22 @@
 }
 
 ul#social {
-  flex-direction: row;
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  margin: $leading-height * 2 0 0 0;
 }
 
 ul#social li {
   list-style: none;
+  width: 22px;
+  text-align: center;
 }
 
 ul#social li a {
-  text-decoration: none;
+  display: block;
+}
+
+ul#social li a svg {
+  margin: auto;
+  vertical-align: -4px;
 }
