@@ -14,7 +14,7 @@
           <li><a rel="me" href="https://www.flickr.com/photos/{{ social.flickr | cgi_escape | escape }}" title="{{ social.flickr | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#flickr' | relative_url }}"></use></svg></a></li>
         {%- endif -%}
         {%- if social.github -%}
-          <li><a rel="me" href="https://github.com/{{ social.github | cgi_escape | escape }}" title="{{ social.github | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#github' | relative_url }}"></use></svg>{{ social.github }}</a></li>
+          <li><a rel="me" href="https://github.com/{{ social.github | cgi_escape | escape }}" title="{{ social.github | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#github' | relative_url }}"></use></svg></a></li>
         {%- endif -%}
         {%- if social.stackoverflow -%}
           <li><a rel="me" href="https://stackoverflow.com/users/{{ social.stackoverflow | cgi_escape | escape }}" title="{{ social.stackoverflow | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#stackoverflow' | relative_url }}"></use></svg></a></li>
@@ -32,7 +32,7 @@
           <li><a rel="me" href="https://{{ mst.instance | cgi_escape | escape}}/@{{mst.username}}" title="{{ mst.username | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#mastodon' | relative_url }}"></use></svg></a></li>
         {%- endif -%}{%- endfor -%}
         {%- if social.twitter -%}
-          <li><a rel="me" href="https://twitter.com/{{ social.twitter | cgi_escape | escape }}" title="{{ social.twitter | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#twitter' | relative_url }}"></use></svg>{{ social.twitter }}</a></li>
+          <li><a rel="me" href="https://twitter.com/{{ social.twitter | cgi_escape | escape }}" title="{{ social.twitter | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#twitter' | relative_url }}"></use></svg></a></li>
         {%- endif -%}
         {%- if social.youtube -%}
           <li><a rel="me" href="https://www.youtube.com/{{ social.youtube | cgi_escape | escape }}" title="{{ social.youtube | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#youtube' | relative_url }}"></use></svg></a></li>
