@@ -61,9 +61,9 @@ Add a `assets/main.scss` to your Jekyll directory with the following contents:
           margin-bottom: $line-height;
         }
 
-## Cyclist
+## Cyclist Grid
 
-To show the Cyclist grid, import the `cyclist-grid.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
+To show the grid, import the `cyclist-grid.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
 
 	<script src="/vendor/cyclist-grid/dist/js/cyclist-grid.js"></script>
 
