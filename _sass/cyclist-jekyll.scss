@@ -2,18 +2,10 @@
 @import "layout";
 @import "typography";
 
-#social svg {
-  color: black;
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-  vertical-align: -3px;
-}
-
 ul#social {
   display: flex;
   justify-content: flex-end;
-  margin: $leading-height * 2 0 0 0;
+  margin: $leading-height * 2 0 0;
 }
 
 ul#social li {
@@ -29,4 +21,15 @@ ul#social li a {
 ul#social li a svg {
   margin: auto;
   vertical-align: -4px;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+ul#social li a:visited svg {
+  filter: invert(49%) sepia(13%) saturate(0%) hue-rotate(134deg) brightness(103%) contrast(85%);
+}
+
+ul#social li a:hover svg {
+  filter: invert(31%) sepia(0%) saturate(439%) hue-rotate(189deg) brightness(99%) contrast(87%);
 }
