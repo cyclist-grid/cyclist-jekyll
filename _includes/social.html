@@ -1,3 +1,4 @@
+{% if site.cyclist_jekyll contains "social_links" %}   
 {%- assign social = site.cyclist_jekyll.social_links -%}
 
       <ul id="social">
@@ -53,3 +54,5 @@
           <li><a href="https://dev.to/{{ social.devto | cgi_escape | escape }}" title="{{ social.devto | escape }}"><svg><use xlink:href="{{ '/assets/social-icons.svg#devto' | relative_url }}"></use></svg></a></li>
         {%- endif -%}
       </ul>
+
+{%- endif -%}
