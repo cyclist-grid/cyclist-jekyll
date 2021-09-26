@@ -61,9 +61,20 @@ Add a `assets/main.scss` to your Jekyll directory with the following contents:
           margin-bottom: $line-height;
         }
 
-## Cyclist
+### Social Links
 
-To show the Cyclist grid, import the `cyclist-grid.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
+To add social links to the footer for each page, add a collection to the `_config.yml`:
+
+    cyclist_jekyll:
+        social_links:
+            twitter: robenkleene
+            github:  robenkleene
+
+Review the [`social.html` source](_includes/social.html) to see the full list of supported social sites.
+
+## Cyclist Grid
+
+To show the grid, import the `cyclist-grid.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
 
 	<script src="/vendor/cyclist-grid/dist/js/cyclist-grid.js"></script>
 
@@ -92,4 +103,3 @@ Or install it yourself as:
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-

@@ -4,9 +4,11 @@ email: contact@robenkleene.com
 description: >
   Demo site for the Cyclist Jekyll theme.
 
-twitter_username: robenkleene
-github_username:  robenkleene
 rss: rss
+cyclist_jekyll:
+  social_links:
+    twitter: robenkleene
+    github:  robenkleene
 
 # show_excerpts: true
 show_contents: true
