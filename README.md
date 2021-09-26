@@ -61,6 +61,17 @@ Add a `assets/main.scss` to your Jekyll directory with the following contents:
           margin-bottom: $line-height;
         }
 
+### Social Links
+
+To add social links to the footer for each page, add a collection to the `_config.yml`:
+
+    cyclist_jekyll:
+        social_links:
+            twitter: robenkleene
+            github:  robenkleene
+
+Review the [`social.html` source](_includes/social.html) to see the full list of supported social sites.
+
 ## Cyclist Grid
 
 To show the grid, import the `cyclist-grid.js` JavaScript in the [HTML `<head>`](_includes/head.html) element:
