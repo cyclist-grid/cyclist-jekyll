@@ -1,8 +1,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  {% feed_meta %} {% seo %} <link rel="stylesheet" href="{{ "/assets/main.css" |
-  relative_url }}">
+  {% feed_meta %} {% seo title=false %}
+  <title>{% if page.title %}{{ site.title }}: {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Mono&family=Lato&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
