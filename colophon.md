@@ -4,7 +4,7 @@ title: Colophon
 permalink: /colophon/
 ---
 
-<img src="cyclist-background.svg" width="200" height="200" alt="Cyclist">
+<img src="/cyclist-background.svg" width="200" height="200" alt="Cyclist">
 
 Cyclist Jekyll is a Jekyll theme, that uses [Cyclist Grid](https://github.com/cyclist-grid/cyclist-grid) to construct a layout using typographic grid.
 
