@@ -27,7 +27,7 @@ ul#social li a svg {
 }
 
 ul#social li a:visited svg {
-  // This doesn't actually, because `:visited` has security-related limitations
+  // This doesn't actually work, because `:visited` has security-related limitations
   filter: invert(49%) sepia(13%) saturate(0%) hue-rotate(134deg) brightness(103%) contrast(85%);
 }
 
