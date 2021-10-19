@@ -28,6 +28,18 @@ div#grid {
   }
 }
 
+header h1 {
+  margin-top: 0;
+}
+
+h2.post-date {
+  margin-top: 0;
+}
+
+li h1, li h2 {
+  margin-top: 0;
+}
+
 header[role=banner] {
   text-align: center;
   margin-bottom: $leading-height * 2;
