@@ -19,11 +19,6 @@ h2 {
   @include header($great-primer-ratio);
 }
 
-h1, h2 {
-  margin-bottom: $line-height;
-  margin-top: $line-height * 2;
-}
-
 h3 {
   @include header($english-ratio);
 }
