@@ -72,6 +72,11 @@ h6 {
   @include header($pica-ratio);
 }
 
+h1, h2 {
+  margin-bottom: $line-height;
+  margin-top: $line-height * 2;
+}
+
 p,
 ul,
 ol {

@@ -76,6 +76,10 @@ h6 {
   font-size: calc(1em * (12 / 12));
   line-height: calc(1 * 1.25rem); }
 
+h1, h2 {
+  margin-bottom: 1.25rem;
+  margin-top: 2.5rem; }
+
 p,
 ul,
 ol {
@@ -89,11 +93,11 @@ ol ul {
 
 ul {
   list-style-type: disc;
-  margin-left: 2rem; }
+  margin-left: 1.25rem; }
 
 ol {
   list-style-type: decimal;
-  margin-left: 2rem; }
+  margin-left: 1.25rem; }
 
 sub {
   line-height: 0;
@@ -119,18 +123,18 @@ sup {
   display: -webkit-flex;
   display: flex;
   background-color: rgba(148, 235, 255, 0.25);
-  margin-right: 1rem;
-  -webkit-flex: 0 0 9rem;
-  flex: 0 0 9rem; }
+  margin-right: 1.25rem;
+  -webkit-flex: 0 0 11.25rem;
+  flex: 0 0 11.25rem; }
 
 .cyclist-guidelines > div.cyclist-column:last-child {
   margin-right: 0; }
 
 .cyclist-column > div.cyclist-unit {
   background-color: rgba(148, 235, 255, 0.25);
-  margin-right: 1rem;
-  -webkit-flex: 0 0 4rem;
-  flex: 0 0 4rem; }
+  margin-right: 1.25rem;
+  -webkit-flex: 0 0 5rem;
+  flex: 0 0 5rem; }
 
 .cyclist-column > div.cyclist-unit:last-child {
   margin-right: 0; }
