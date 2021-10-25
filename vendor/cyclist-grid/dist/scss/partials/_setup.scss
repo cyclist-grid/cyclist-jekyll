@@ -12,8 +12,8 @@ $leading-height: $line-height !default;
 
 // Grid Variables
 
-$gutter-width: 1rem !default;
-$num-indent-gutters: 2 !default;
+$gutter-width: $line-height !default;
+$num-indent-gutters: 1 !default;
 $num-unit-gutters: 4 !default;
 $num-column-units: 2 !default;
 
@@ -22,4 +22,3 @@ $num-column-units: 2 !default;
 $indent-width: $gutter-width * $num-indent-gutters !default;
 $unit-width: $gutter-width * $num-unit-gutters !default;
 $column-width: $unit-width * $num-column-units + $gutter-width * ($num-column-units - 1) !default;
-
