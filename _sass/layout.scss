@@ -26,6 +26,21 @@ div#grid {
   div#grid {
     width: 100%;
   }
+
+  body header[role=banner] nav {
+    text-align: left;
+  }
+  body header[role=banner] nav ul {
+    display: inline;
+    flex-direction: initial; }
+  body header[role=banner] nav ul li {
+    flex-grow: 0;
+    display: inline; }
+  body header[role=banner] nav ul li {
+    text-align: left;
+    margin-right: 1rem; }
+  body header[role=banner] nav ul li a {
+    display: inline; }
 }
 
 header h1 {
