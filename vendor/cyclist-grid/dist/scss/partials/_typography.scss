@@ -11,7 +11,7 @@ body {
 @function font-size-from-ratio($ratio) {
   $numerator: nth($ratio, 1);
   $denumerator: nth($ratio, 2);
-  @return calc(1em * (#{$numerator} / #{$denumerator}));
+  @return calc(1em * #{$numerator} / #{$denumerator});
 }
 
 @mixin header($ratio) {
