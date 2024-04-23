@@ -147,12 +147,14 @@ article hr {
   display: block;
 }
 
-article img {
+article img,
+.post img {
   vertical-align: middle;
 }
 
 article img,
-article video {
+article video,
+.post img {
   max-width: 100%;
 }
 

@@ -18,7 +18,7 @@ body {
   $numerator: nth($ratio, 1);
   $denumerator: nth($ratio, 2);
   font-size: font-size-from-ratio($ratio);
-  $leading-multiplier: ceil($numerator / $denumerator);
+  $leading-multiplier: ceil(calc($numerator / $denumerator));
   line-height: calc(#{$leading-multiplier} * #{$leading-height});
 }
 
