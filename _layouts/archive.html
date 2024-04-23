@@ -24,6 +24,9 @@ layout: default
           <ul>
           {%- endif %}
             <li class="{{ post.layout | default: "Post" }}">
+              {% if post.image %}
+              <img src="{{ post.image | relative_url }}" alt="Image for {{ post.title | escape }}">
+              {% endif %}
               <h1><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
             </li>
           {% endfor %}
